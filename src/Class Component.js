@@ -1,4 +1,4 @@
-ssimport React from  'react'
+import React from  'react'
 class  ClassComponent extends React.Component{
    render(){
    	    return(

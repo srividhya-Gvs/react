@@ -1,15 +1,30 @@
-import StateExample from './StateExample'
+/*import StateExample from './StateExample'
 import FuncProps  from './FuncProps'
 import DemoExample from './DemoExample'
 import Events from './Events'
-import JSX from './JSX'
+import JSX from './JSX'*/
 //import ClassComponent  from  './Class Component'
+import Home from './Components/Home'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import NotFound from './Components/NotFound' 
 
 function App() {
   return (
       <div>
-      <StateExample/>
-      {/*<DemoExample price="1st price"/>
+          <BrowserRouter>
+            <Navbar/>
+              <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="*" element={<NotFound/>}/>
+              </Routes>
+          </BrowserRouter>
+      {/*<StateExample/>
+      <DemoExample price="1st price"/>
       <Events/>
       <JSX/>
          <FuncProps carname="BMW"  year="1997"/>

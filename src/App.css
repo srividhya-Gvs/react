@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.nav a{
+    text-decoration: none;
+    margin-right: 15%;
+    color: darkred;
+}
+
+.nav{
+  background-color: orangered ;width: 50%;
+}
